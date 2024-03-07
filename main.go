@@ -1,9 +1,19 @@
-module main
+package main
 
-func main{
-	if a := f(); a > 0 {
-		fmt.Println(a)
-	} else {
-		fmt.Println(2*a)
+import "fmt"
+
+func main() {
+	for i := 0; i <= 10; i = i + 1 {
+
+		switch i {
+		case 2:
+			i = i * 3
+			fmt.Println(i)
+		case 10:
+			fmt.Println(("終了"))
+		default:
+			fmt.Println(i)
+		}
+
 	}
 }
